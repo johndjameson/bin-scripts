@@ -4,11 +4,13 @@
 #   Message
 #   -> Output a styled message
 #
+#   Dependencies: font
+#
 # ----------------------------------------------------
-#   Dependencies
+#   Usage
 # ----------------------------------------------------
 #
-#   - font
+#  `message green 'Some message'`
 #
 # ****************************************************
 

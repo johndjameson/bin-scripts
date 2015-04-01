@@ -4,11 +4,15 @@
 #   Spellbook
 #   -> Download Spellbook files or copy to clipboard
 #
+#   Dependencies: download-zip
+#
 # ----------------------------------------------------
-#   Dependencies
+#   Usage
 # ----------------------------------------------------
 #
-#   - download-zip
+#  `spellbook` - downloads all the files
+#  `spellbook components limiter` - downloads the limiter Component
+#  `spellbook copy components limiter` - copies the limiter Component to the clipboard
 #
 # ****************************************************
 

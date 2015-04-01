@@ -4,11 +4,15 @@
 #   MVCSS Library
 #   -> Download MVCSS Library files or copy to clipboard
 #
+#   Dependencies: download-zip
+#
 # ----------------------------------------------------
-#   Dependencies
+#   Usage
 # ----------------------------------------------------
 #
-#   - download-zip
+#  `mvcss-library` - downloads all of the files
+#  `mvcss-library components list` - downloads the List Component
+#  `mvcss-library copy components list` - copies the List Component to clipboard
 #
 # ****************************************************
 

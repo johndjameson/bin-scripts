@@ -4,11 +4,15 @@
 #   MVCSS
 #   -> Download MVCSS files or copy to clipboard
 #
+#   Dependencies: download-zip
+#
 # ----------------------------------------------------
-#   Dependencies
+#   Usage
 # ----------------------------------------------------
 #
-#   - download-zip
+#  `mvcss` - downloads all the files
+#  `mvcss components card` - downloads the Card Component
+#  `mvcss copy components card` - copies the Card Component
 #
 # ****************************************************
 
