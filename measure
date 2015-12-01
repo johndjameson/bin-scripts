@@ -44,19 +44,18 @@ end
 #   Setup
 # ====================================
 
-file   = File.open( ARGV[0] )
 values = []
 
-file.each_line do |line|
-  values.push( line.to_f )
+File.open( ARGV[0] ) do |file|
+  file.each_line do |line|
+    values.push( line.to_f )
+  end
 end
-
-file.close
 
 # ====================================
 #   Output
 # ====================================
 
-puts "Total: #{ sum( values ) }"
+puts "Sum: #{ sum( values ) }"
 puts "Mean: #{ mean( values ) }"
 puts "Median: #{ median( values ) }"
