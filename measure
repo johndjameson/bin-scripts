@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby
+# ****************************************************
+#
+#   Measure
+#   -> Output measures of central tendency
+#
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `measure path/to/file`
+#
+# ****************************************************
+
+# ====================================
+#   Helpers
+# ====================================
+
+# ----- Mean ----- #
+
+def mean( array )
+  return sum( array ) / array.size
+end
+
+# ----- Median ----- #
+
+def median( array )
+  array = array.sort
+
+  if array.size.odd?
+    return array[ ( array.size.to_f / 2 ).floor ]
+  else
+    return mean( [ array[ ( array.size / 2 ) - 1 ], array[ array.size / 2 ] ] )
+  end
+end
+
+# ----- Sum ----- #
+
+def sum( array )
+  return array.reduce(:+)
+end
+
+# ====================================
+#   Setup
+# ====================================
+
+file   = File.open( ARGV[0] )
+values = []
+
+file.each_line do |line|
+  values.push( line.to_f )
+end
+
+file.close
+
+# ====================================
+#   Output
+# ====================================
+
+puts "Total: #{ sum( values ) }"
+puts "Mean: #{ mean( values ) }"
+puts "Median: #{ median( values ) }"
