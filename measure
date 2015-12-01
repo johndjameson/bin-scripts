@@ -53,7 +53,7 @@ values   = []
 
 File.open( filename ) do |file|
   file.each_line do |line|
-    values.push( line.to_f )
+    values.push( line.include?( '.' ) ? line.to_f : line.to_i )
   end
 end
 
