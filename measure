@@ -22,7 +22,7 @@
 # ----- Mean ----- #
 
 def mean( array )
-  return sum( array ) / array.size
+  sum( array ) / array.size
 end
 
 # ----- Median ----- #
@@ -31,16 +31,16 @@ def median( array )
   array = array.sort
 
   if array.size.odd?
-    return array[ ( array.size.to_f / 2 ).floor ]
+    array[ ( array.size.to_f / 2 ).floor ]
   else
-    return mean( [ array[ ( array.size / 2 ) - 1 ], array[ array.size / 2 ] ] )
+    mean( [ array[ ( array.size / 2 ) - 1 ], array[ array.size / 2 ] ] )
   end
 end
 
 # ----- Sum ----- #
 
 def sum( array )
-  return array.reduce(:+)
+  array.reduce(:+)
 end
 
 # ====================================
